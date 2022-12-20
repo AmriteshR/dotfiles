@@ -1,0 +1,15 @@
+docker
+docker-compose
+pgadmin
+pyenv
+pipenv
+pgenv
+fish
+discord
+brave
+layan
+jorgebucaran/fisher
+ilancosman/tide@v5
+jethrokuan/z
+joseluisq/gitnow@2.10.0
+fisher
