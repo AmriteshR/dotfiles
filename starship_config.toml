@@ -3,6 +3,7 @@ format = """
 $os\
 $directory\
 $git_branch\
+$git_status\
 $fill\
 $nodejs\
 $dotnet\
@@ -98,6 +99,21 @@ read_only_style = ''
 [git_branch]
 format = '[─](fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $branch](fg:foreground bg:box)[](fg:box)'
 symbol = ' '
+
+[git_status]
+format = '[─](fg:current_line)[](fg:orange)[$all_status$ahead_behind](fg:primary bg:orange)[](fg:orange bg:box)'
+style = 'fg:foreground bg:box'
+conflicted = ' '
+ahead = '⇡${count} '
+behind = '⇣${count} '
+diverged = '⇕⇡${ahead_count}⇣${behind_count} '
+up_to_date = '✓ '
+untracked = '?${count} '
+stashed = ' ${count} '
+modified = ' ${count} '
+staged = ' ${count} '
+renamed = '»${count} '
+deleted = ' ${count} '
 
 [nodejs]
 format = '[─](fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
