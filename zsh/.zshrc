@@ -1,5 +1,9 @@
 . "$HOME/.local/bin/env"
 
+
+# Load aliases
+[[ -f ~/.config/zsh/aliases.zsh ]] && source ~/.config/zsh/aliases.zsh
+
 # -------------------------
 # Basics
 # -------------------------
@@ -67,3 +71,4 @@ eval "$(pyenv init - zsh)"
 
 # ----- STARTSHIP ------
 eval "$(starship init zsh)"
+export GPG_TTY=$(tty)
